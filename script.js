@@ -15,28 +15,30 @@ if (choice <= 3) {
 
 }
 
-const playerSelection = "paper"
-const computerSelection = getComputerChoice()
+
+
 
 function playRound() {
+    const playerSelection = prompt("Pease enter rock - paper - scissors").toLocaleLowerCase()
+    const computerSelection = getComputerChoice()
 
     if (playerSelection == "rock") {
         switch (computerSelection) {
             case "rock":
                     console.log("Computer chose rock...");
-                    setTimeout(() => console.log("It's a draw."), 1000);
+                    // setTimeout(() => console.log("It's a draw."), 1000);
                     return "draw"
                 break;
                 
             case "paper":
                     console.log("Computer chose paper...");
-                    setTimeout(() => console.log("You lost..."), 1000);
+                    // setTimeout(() => console.log("You lost..."), 1000);
                     return "lost"
                 break;
 
             case "scissors":
                     console.log('Computer chose scissors');
-                    setTimeout(() => console.log("You win!!!"), 1000);
+                    // setTimeout(() => console.log("You win!!!"), 1000);
                     return "win"
                 break;
         }
@@ -44,51 +46,57 @@ function playRound() {
         switch (computerSelection) {
             case "rock":
                     console.log("Computer chose rock...");
-                    setTimeout(() => console.log("You win!!!"), 1000);
+                    // setTimeout(() => console.log("You win!!!"), 1000);
                     return "win"
-                break;
                 
             case "paper":
                     console.log("Computer chose paper...");
-                    setTimeout(() => console.log("It's a draw."), 1000);
+                    // setTimeout(() => console.log("It's a draw."), 1000);
                     return "draw"
-                break;
 
             case "scissors":
                     console.log('Computer chose scissors');
-                    setTimeout(() => console.log("You lost..."), 1000);
+                    // setTimeout(() => console.log("You lost..."), 1000);
                     return "lost"
-                break;
         }
     } else if (playerSelection == "scissors") {
         switch (computerSelection) {
             case "rock":
                     console.log("Computer chose rock...");
-                    setTimeout(() => console.log("You lost..."), 1000);
+                    // setTimeout(() => console.log("You lost..."), 1000);
                     return "lost"
                 break;
                 
             case "paper":
                     console.log("Computer chose paper...");
-                    setTimeout(() => console.log("You win!!!"), 1000);
+                    // setTimeout(() => console.log("You win!!!"), 1000);
                     return "win"
                 break;
 
             case "scissors":
                     console.log('Computer chose scissors');
-                    setTimeout(() => console.log("It's a draw."), 1000);
+                    // setTimeout(() => console.log("It's a draw."), 1000);
                     return "draw"
                 break;
         }
     }
                 
     }
-    playRound()
+
+    let playerDefaultResult = 1
+    let computerDefaultResult = 1
+    let drawDefaultResultResult = 1
 
     function game() {
+
         
         for(let i = 0; i < 5; i++){
-            console.log("test");
+            console.log(playRound());
+
+                if (playRound() == "win") {
+                     playerResult = playerDefaultResult++;
+                     console.log(playerResult);
+                }
         }
 
     }
