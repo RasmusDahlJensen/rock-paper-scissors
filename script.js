@@ -109,9 +109,9 @@ function playRound() {
                 }
                 if (i == 4) {
                     console.clear()
-                    console.log("You won " + playerResult + "times");
-                    console.log("The computer won " + computerResult + "times");
-                    console.log("You drew "+ drawResult + "times");
+                    console.log("You won " + playerResult + " times");
+                    console.log("The computer won " + computerResult + " times");
+                    console.log("You drew "+ drawResult + " times");
     
                     if (playerResult>computerResult) {
                         console.log("Congratulations you win the game!!");
