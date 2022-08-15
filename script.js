@@ -17,7 +17,7 @@ if (choice <= 3) {
 
 
 
-function playRound(result) {
+function playRound() {
     const playerSelection = prompt("Pease enter rock - paper - scissors").toLocaleLowerCase()
     const computerSelection = getComputerChoice()
 
