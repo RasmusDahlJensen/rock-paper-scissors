@@ -1,0 +1,30 @@
+#SRflex{
+    display: flex;
+    gap: 5%;
+    width: 500px;
+
+}
+
+.resultBox{
+    width: 250px;
+    height: 100x;
+    background-color: lightgray;
+    border: black 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button{
+    padding: 25px;
+    background-color: lightgrey;
+    border: 1px solid black;
+}
+
+.contentFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
